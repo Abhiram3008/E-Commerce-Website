@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrendifyStore</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Navigation Bar -->
+    <header class="bg-white shadow-lg">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-black">BTrendifyStore</a>
+    
+            <div class="md:hidden">
+                <input type="checkbox" id="menu-toggle" class="peer hidden" />
+                <label for="menu-toggle" class="text-gray-700 cursor-pointer">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </label>
+            </div>
+    
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600">Shop</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600">Categories</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600">Contact</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600">About</a>
+            </nav>
+    
+            <div class="hidden md:flex space-x-4">
+                <input type="text" placeholder="Search..." class="border border-gray-300 rounded px-4 py-2">
+                <a href="#" class="text-gray-700 hover:text-blue-600">Cart</a>
+            </div>
+        </div>
+
+        <div class="md:hidden peer-checked:block hidden bg-white">
+            <nav class="flex flex-col items-center space-y-4 py-4">
+                <a href="#" class="text-gray-700 hover:text-blue-600">Home</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600">Shop</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600">Categories</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600">Contact</a>
+                <a href="#" class="text-gray-700 hover:text-blue-600">About</a>
+            </nav>
+        </div>
+    </header>
+    
+
+    <!-- Home Section -->
+    <section class="relative bg-blue-600 text-white py-20">
+        <div class="absolute inset-0">
+            <img src="https://st2.depositphotos.com/3102403/8723/v/950/depositphotos_87232620-stock-illustration-thin-line-retail-e-commerce.jpg" 
+                 alt="Background Image" class="w-full h-full object-cover opacity-50">
+        </div>
+        <div class="relative max-w-7xl mx-auto text-center z-10">
+            <h2 class="text-4xl font-extrabold">Welcome to Our E-commerce Store</h2>
+            <p class="mt-4 text-lg">Shop the latest collections and exclusive offers. Grab your favorite products now!</p>
+            <a href="#" class="inline-block mt-6 bg-black text-white py-3 px-6 rounded-md text-lg font-bold">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="container mx-auto py-16">
+        <h2 class="text-3xl font-bold text-center mb-8">Shop by Categories</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://media.licdn.com/dms/image/C5612AQF47X36I5oVrQ/article-cover_image-shrink_600_2000/0/1598253626396?e=2147483647&v=beta&t=ZS5Uqe9IXj6w_StdGKKTv9D3uXNEgnTIfMkdfD6UkpI" alt="Category Image" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">Fashion and Apparel</h3>
+                    <p class="mt-2 text-gray-600">Discover the best items in this category.</p>
+                    <a href="#" class="block text-blue-600 mt-4 font-bold">Shop Now</a>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://media.istockphoto.com/id/1317419655/photo/spa-coconut-products-flat-lay-face-body-and-hair-organic-treatment-concept.jpg?s=612x612&w=0&k=20&c=a65-F0bomeXFE1g42ewxnqDO5dFoVIm_WpsJUlL1xuQ=" alt="Category Image" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">Health and Beauty</h3>
+                    <p class="mt-2 text-gray-600">Discover the best items in this category.</p>
+                    <a href="#" class="block text-blue-600 mt-4 font-bold">Shop Now</a>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://media.istockphoto.com/id/1136317339/photo/sports-equipment-on-floor.jpg?s=612x612&w=0&k=20&c=-aI8u_Se89IC-HJZYH724ei5z-bIcSvRW6qUwyMtRyE=" alt="Category Image" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">Sports and Outdoors</h3>
+                    <p class="mt-2 text-gray-600">Discover the best items in this category.</p>
+                    <a href="#" class="block text-blue-600 mt-4 font-bold">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="container mx-auto py-16">
+        <h2 class="text-3xl font-bold text-center mb-8">Featured Products</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://images.pexels.com/photos/842811/pexels-photo-842811.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Product Image" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">Best Sellers</h3>
+                    <p class="mt-2 text-gray-600">Short product description goes here.</p>
+                    <div class="text-center mt-4">
+                        <a href="#" class="inline-block bg-black text-white py-2 px-6 rounded-md text-lg  hover:bg-blue-700">
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmQg8zzJEFo1iQVHvYAyAatcMlPPzXKefOfhYUruJvXhx5U0o-Ws8P2YO1e4wVmm6Zx_E&usqp=CAU" alt="Product Image" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">New Arrivals</h3>
+                    <p class="mt-2 text-gray-600">Short product description goes here.</p>
+                    <div class="text-center mt-4">
+                        <a href="#" class="inline-block bg-black text-white py-2 px-6 rounded-md text-lg  hover:bg-blue-700">
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://static.vecteezy.com/system/resources/previews/020/337/092/non_2x/popular-sportswear-manufacturer-logos-adidas-nike-puma-and-reebok-logos-free-vector.jpg" alt="Product Image" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">Brand Products</h3>
+                    <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur.</p>
+                    <div class="text-center mt-4">
+                        <a href="#" class="inline-block bg-black text-white py-2 px-6 rounded-md text-lg  hover:bg-blue-700">
+                            Buy Now
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+
+           
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1470309864661-68328b2cd0a5?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2xvdGhpbmd8ZW58MHx8MHx8fDA%3D" alt="Product Image" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold">Back-in-Stock</h3>
+                    <p class="mt-2 text-gray-600">Short product description goes here.</p>
+                    <div class="text-center mt-4">
+                        <a href="#" class="inline-block bg-black text-white py-2 px-6 rounded-md text-lg  hover:bg-blue-700">
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">What Our Customers Say</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+               
+                <div class="bg-white shadow-lg p-6 rounded-lg">
+                    <p class="text-gray-600 mb-4">"Amazing products and great customer service! Highly recommended."</p>
+                    <p class="font-semibold">- Lana</p>
+                </div>
+                
+                <div class="bg-white shadow-lg p-6 rounded-lg">
+                    <p class="text-gray-600 mb-4">"I love shopping here. The prices are unbeatable."</p>
+                    <p class="font-semibold">- Alex</p>
+                </div>
+                
+                <div class="bg-white shadow-lg p-6 rounded-lg">
+                    <p class="text-gray-600 mb-4">"Fast shipping and excellent quality. Will shop again!"</p>
+                    <p class="font-semibold">- Felix</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="bg-blue-600 text-white py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Join Our Newsletter</h2>
+            <p class="mb-8">Stay updated with our latest offers and new arrivals.</p>
+            <form class="max-w-lg mx-auto">
+                <div class="flex items-center justify-center">
+                    <input type="email" placeholder="Enter your email" class="w-full px-4 py-2 rounded-l-md text-gray-700" required>
+                    <button type="submit" class="bg-black text-white px-6 py-2 rounded-r-md hover:bg-gray-800">Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+  
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto text-center">
+
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="#" class="text-gray-400 hover:text-white">Home</a>
+                <a href="#" class="text-gray-400 hover:text-white">Shop</a>
+                <a href="#" class="text-gray-400 hover:text-white">Categories</a>
+                <a href="#" class="text-gray-400 hover:text-white">About</a>
+                <a href="#" class="text-gray-400 hover:text-white">Contact</a>
+            </div>
+
+            <p class="text-gray-400">&copy; 2024 My E-commerce Store. All rights reserved.</p>
+
+            <div class="mt-4 space-x-4">
+                <a href="#" class="text-gray-400 hover:text-white">
+                    <i class="fab fa-facebook-f"></i> 
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white">
+                    <i class="fab fa-twitter"></i> 
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
